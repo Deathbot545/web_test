@@ -1,0 +1,68 @@
+CREATE TABLE Administrator
+(AdminID INT(10) NOT NULL,
+Username VARCHAR(15) NOT NULL,
+Password CHAR(8) NOT NULL,
+PRIMARY KEY (AdminID))
+
+CREATE TABLE Bids
+(BidID INT NOT NULL,
+ItemID INT NOT NULL,
+BuyerID INT NOT NULL,
+BidAmount DECIMAL(5,2),
+BidTime DATETIME,
+WinStatus VARCHAR(3) NOT NULL ,
+PRIMARY KEY (BidID))
+
+
+CREATE TABLE Buyer
+(BuyerID INT(10) NOT NULL,
+Username VARCHAR(15) NOT NULL,
+Password CHAR(8) NOT NULL,
+Fname VARCHAR(15),
+Lname VARCHAR(15),
+Street VARCHAR(10),
+AptNo VARCHAR(8),
+City VARCHAR(20),
+State CHAR(2),
+ZipCode VARCHAR(9),
+Email VARCHAR(25),
+PhoneNo CHAR(10),
+PRIMARY KEY (BuyerID))
+
+
+CREATE TABLE Item
+(ItemID INT(10) NOT NULL,
+Title VARCHAR(30),
+Description VARCHAR(100),
+Categorry VARCHAR(11),
+StartBidAmount DECIMAL(5,2),
+AuctionStart DATETIME,
+AuctionEnd DATETIME,
+SellerID INT(10) NOT NULL,
+ShipPrice DECIMAL(5,2),
+ShipDate DATETIME,
+ArrivalDate DATETIME,
+BuyerID INT(10) NOT NULL,
+AccountType VARCHAR(16),
+AccountNo CHAR(16),
+PRIMARY KEY (ItemID))
+
+CREATE TABLE Photo
+(ItemID INT(10) NOT NULL,
+Photo longblob);
+
+CREATE TABLE Seller
+(SellerID INT(10) NOT NULL,
+Username VARCHAR(15) NOT NULL,
+Password CHAR(8) NOT NULL,
+CompanyName VARCHAR(30),
+Fname VARCHAR(15),
+Lname VARCHAR(15),
+Street VARCHAR(20),
+AptNo VARCHAR(8),
+City VARCHAR(20),
+State CHAR(2),
+ZipCode VARCHAR(9),
+Email VARCHAR(25),
+PhoneNo CHAR(10),
+PRIMARY KEY (SellerID))
