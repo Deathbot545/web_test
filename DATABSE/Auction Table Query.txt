@@ -1,3 +1,5 @@
+CREATE DATABASE auction
+
 CREATE TABLE Administrator
 (AdminID INT(10) NOT NULL,
 Username VARCHAR(15) NOT NULL,
