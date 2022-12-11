@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pornhub.com</title>
+    <title>Online Auction System</title>
     <?php include('connect.php') ?>
         <!-- CSS only -->
       <script>
@@ -23,6 +23,9 @@
         function tt(){
           window.open('tt.html')
         }
+        function cc(){
+          window,open('vehicle.php')
+        }
       </script>
      
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -39,7 +42,7 @@
           <li><a href="#" class="nav-link px-2 text-secondary" onclick="dash()">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white" onclick="dd()">Features</a></li>
           <li><a href="#" class="nav-link px-2 text-white" onclick="tt()">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white" onclick="cc()">FAQs</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
 
@@ -68,9 +71,19 @@
 
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#collection"/></svg>
+        <img src="vehicleicon.png" />
         </div>
-        <h3 class="fs-2">Featured title</h3>
+        <h3 class="fs-2">Vehicles</h3>
+        <a href="#" class="icon-link d-inline-flex align-items-center">
+          Call to action
+          
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi"width="2em" height="2em"><use xlink:href="#collection"/></svg>
+        </div>
+        <h3 class="fs-2">Electronics</h3>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
@@ -80,17 +93,7 @@
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi"width="2em" height="2em"><use xlink:href="#collection"/></svg>
         </div>
-        <h3 class="fs-2">Featured title</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi"width="2em" height="2em"><use xlink:href="#collection"/></svg>
-        </div>
-        <h3 class="fs-2">Featured title</h3>
+        <h3 class="fs-2">properties</h3>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
@@ -100,7 +103,7 @@
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="2em" height="2em"><use xlink:href="#collection"/></svg>
         </div>
-        <h3 class="fs-2">Featured title</h3>
+        <h3 class="fs-2">Arts</h3>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi"width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
@@ -111,7 +114,7 @@
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="2em" height="2em"><use xlink:href="#people-circle"/></svg>
         </div>
-        <h3 class="fs-2">Featured title</h3>
+        <h3 class="fs-2">Antiques</h3>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
@@ -121,7 +124,7 @@
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="2em" height="2em"><use xlink:href="#toggles2"/></svg>
         </div>
-        <h3 class="fs-2">Featured title</h3>
+        <h3 class="fs-2">Other</h3>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi"width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
@@ -131,35 +134,29 @@
     
 
 
-          <p class="pb-2 border-bottom" ></p>
+          <p class="pb-5 border-bottom" ></p>
           <a class="btn btn-outline-light" href="#">Coming soon</a>
       
     
       
     </main>
-    
-    <div class="container">
-     <h1> This is container class </h1>
-     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-     Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
-    </div>
      
-      
     </head>
     <body >
-        <h1 align='center'>Ohh YEAH !!!</h1>
+        <h1 align='center'>last call Items</h1>
         <footer class="container py-5">
             <div class="row">
-             <?php $sql    = 'SELECT * FROM actor';
-              $result = mysqli_query($con, $sql);
+
+             <?php $sql    = 'SELECT * FROM images';
+              $result = mysqli_query($conn, $sql);
+            
               $another = mysqli_fetch_all($result,MYSQLI_ASSOC); foreach($another as $aanother){?> 
               <div class="col-sm-6">
                <div class="card">
                   <div class="card-body">
-                  <h5 class="card-title"><?php echo htmlspecialchars($aanother['name'])?></h5>
-                  <p class="card-text"><?php echo htmlspecialchars($aanother['country'])?></p>  
+                  <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($aanother['image']); ?>" />
+
+                  <p class="card-text"><?php echo htmlspecialchars($aanother['created'])?></p>  
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                </div>

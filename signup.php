@@ -22,7 +22,7 @@
     }
     else{
         echo 'error' .mysqli_error($con);
-    }4
+    }
  
  echo $_POST["firstName"];
  echo $_POST["lastName"];
