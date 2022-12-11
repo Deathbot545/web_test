@@ -2,9 +2,9 @@
 
   
   
- $conn=mysqli_connect('localhost','batman','imbatman','testy');
+ $conn=mysqli_connect('localhost','batman','imbatman','auction');
     if(!$conn){
-     echo 'fucing error';
+     echo 'connection error';
    }
    
 

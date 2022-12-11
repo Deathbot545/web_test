@@ -20,9 +20,6 @@
         function dd(){
           window.open('test.php')
         }
-        function tt(){
-          window.open('tt.html')
-        }
         function cc(){
           window,open('vehicle.php')
         }
@@ -41,7 +38,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-secondary" onclick="dash()">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white" onclick="dd()">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white" onclick="tt()">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white" >Pricing</a></li>
           <li><a href="#" class="nav-link px-2 text-white" onclick="cc()">FAQs</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
@@ -147,17 +144,18 @@
         <footer class="container py-5">
             <div class="row">
 
-             <?php $sql    = 'SELECT * FROM images';
+             <?php $sql    = 'SELECT * FROM Item, Photo WHERE Item.ItemID=Photo.ItemID;';
+             
               $result = mysqli_query($conn, $sql);
             
               $another = mysqli_fetch_all($result,MYSQLI_ASSOC); foreach($another as $aanother){?> 
               <div class="col-sm-6">
                <div class="card">
                   <div class="card-body">
-                  <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($aanother['image']); ?>" />
-
-                  <p class="card-text"><?php echo htmlspecialchars($aanother['created'])?></p>  
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h2><?php echo htmlspecialchars($aanother['Title']) ?></h2>
+                  <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($aanother['Photo']); ?>" />
+                  <p class="card-text"><?php echo htmlspecialchars($aanother['Description'])?></p>  
+                  <a href="#" class="btn btn-primary">View</a>
                   </div>
                </div>
               </div>
