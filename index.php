@@ -25,10 +25,6 @@
       window.open('test.php')
     }
 
-    function cc() {
-      window,
-      open('vehicle.php')
-    }
   </script>
 
   <style>
@@ -59,7 +55,6 @@
           <li><a href="#" class="nav-link px-2 text-secondary" onclick="dash()">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white" onclick="dd()">Features</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white" onclick="cc()">FAQs</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
 
