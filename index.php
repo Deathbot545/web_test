@@ -61,76 +61,6 @@
         
   <h1 class="visually-hidden">Features examples</h1>
 
-  <div class="container px-1 py-3" id="featured-3">
-    <h2 class="pb-2 border-bottom" align="center">Columns with icons</h2>
-    <div class="row g-5 py-6 row-cols-3 row-cols-lg-3">
-
-
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        <img src="vehicleicon.png" />
-        </div>
-        <h3 class="fs-2">Vehicles</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi"width="2em" height="2em"><use xlink:href="#collection"/></svg>
-        </div>
-        <h3 class="fs-2">Electronics</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi"width="2em" height="2em"><use xlink:href="#collection"/></svg>
-        </div>
-        <h3 class="fs-2">properties</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#collection"/></svg>
-        </div>
-        <h3 class="fs-2">Arts</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi"width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#people-circle"/></svg>
-        </div>
-        <h3 class="fs-2">Antiques</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="2em" height="2em"><use xlink:href="#toggles2"/></svg>
-        </div>
-        <h3 class="fs-2">Other</h3>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi"width="2em" height="2em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-    </div>
-    
-
-
           <p class="pb-5 border-bottom" ></p>
           <a class="btn btn-outline-light" href="#">Coming soon</a>
       
@@ -140,17 +70,15 @@
      
     </head>
     <body >
+    
         <h1 align='center'>last call Items</h1>
-        <footer class="container py-5">
-            <div class="row">
-
+        <footer class="container py-5  ">
+            <div class="row ">
              <?php $sql    = 'SELECT * FROM Item, Photo WHERE Item.ItemID=Photo.ItemID;';
-             
-              $result = mysqli_query($conn, $sql);
-            
+              $result = mysqli_query($conn, $sql); 
               $another = mysqli_fetch_all($result,MYSQLI_ASSOC); foreach($another as $aanother){?> 
               <div class="col-sm-6">
-               <div class="card">
+               <div class="card" >
                   <div class="card-body">
                   <h2><?php echo htmlspecialchars($aanother['Title']) ?></h2>
                   <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($aanother['Photo']); ?>" />

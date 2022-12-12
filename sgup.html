@@ -67,7 +67,7 @@
 
                             <div class="col-md-7 col-lg-8 ">
                                 <h4 class="mb-3 text-center">Sign Up As a Buyer</h4>
-                                <form action="login.php" method="post" class="needs-validation" novalidate>
+                                <form action="signup.php" method="post" class="needs-validation" novalidate>
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <label for="firstName" class="form-label">First name</label>
@@ -149,7 +149,7 @@
 
                                         </div>
 
-                                        <hr class="my-4" />
+                                      
 
                                         <div class="col-12">
                                             <label for="address" class="form-label">Phone Number</label>
@@ -157,6 +157,23 @@
                                                 placeholder="077556565" required />
                                             <div class="invalid-feedback">
                                                 Please enter your Phone Number.
+                                            </div>
+                                            <hr class="my-4" />
+                                            <div class="col-sm-4">
+                                                <label for="lastName" class="form-label">Password</label>
+                                                <input type="text" class="form-control" name="pass" placeholder=""
+                                                    value="" required />
+                                                <div class="invalid-feedback">
+                                                    Enter password.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="lastName" class="form-label">Confirm Password</label>
+                                                <input type="text" class="form-control" name="" placeholder=""
+                                                    value="" required />
+                                                <div class="invalid-feedback">
+                                                    Password do not match.
+                                                </div>
                                             </div>
 
 
@@ -189,7 +206,7 @@
 
                             <div class="col-md-7 col-lg-8 ">
                                 <h4 class="mb-3 text-center">Sign Up As a Seller</h4>
-                                <form action="login.php" method="post" class="needs-validation" novalidate>
+                                <form action="ssignup.php" method="post" class="needs-validation" novalidate>
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <label for="firstName" class="form-label">First name</label>
@@ -220,6 +237,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                       
 
                                         <div class="col-12">
                                             <label for="email" class="form-label">Email <span
@@ -283,8 +301,6 @@
 
                                         </div>
 
-                                        <hr class="my-4" />
-
                                         <div class="col-12">
                                             <label for="address" class="form-label">Contact Number</label>
                                             <input type="text" class="form-control" name="snumber"
@@ -295,7 +311,23 @@
 
 
                                             <hr class="my-4" />
-
+                                            <div class="col-sm-4">
+                                                <label for="lastName" class="form-label">Password</label>
+                                                <input type="text" class="form-control" name="spass" placeholder=""
+                                                    value="" required />
+                                                <div class="invalid-feedback">
+                                                    Enter password.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="lastName" class="form-label">Confirm Password</label>
+                                                <input type="text" class="form-control" name="" placeholder=""
+                                                    value="" required />
+                                                <div class="invalid-feedback">
+                                                    Password do not match.
+                                                </div>
+                                            </div>
+                                            <hr class="my-4" />
                                             <button class="w-100 btn btn-primary btn-lg" type="submit">
                                                 Sign Up
                                             </button>
