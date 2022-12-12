@@ -50,7 +50,7 @@ AccountNo CHAR(16),
 PRIMARY KEY (ItemID))
 
 CREATE TABLE Photo
-(ItemID INT(10) NOT NULL,
+(ItemID INT(10) NOT NULL AUTO_INCREMENT,
 Photo longblob);
 
 CREATE TABLE Seller
