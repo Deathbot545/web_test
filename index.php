@@ -18,7 +18,7 @@
     }
 
     function dash() {
-      window.open('dash.html');
+      window.open('dash.php');
     }
 
     function dd() {
@@ -69,13 +69,14 @@
 
         <div class="text-end">
           <a href="lgup.html">
-            <button" class="btn btn-outline-light me-2">Login</button>
+            <button" class="btn btn-outline-light me-2">Log</button>
           </a>
           <button type="button" class="btn btn-warning" onclick="signup()">Sign-up</button>
         </div>
       </div>
     </div>
   </header>
+
 
 
 </head>
