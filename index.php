@@ -24,6 +24,9 @@
     function dd() {
       window.open('test.php')
     }
+    function abou(){
+      window.open('aboutus.html');
+    }
 
   </script>
 
@@ -55,11 +58,23 @@
           <li><a href="#" class="nav-link px-2 text-secondary" onclick="dash()">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white" onclick="dd()">Features</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          <li><a href="#" class="nav-link px-2 text-white" onclick="abou()">About</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" action="" method="post">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search" name="ser">
+          <button type="submit" class="btn btn-primary" name="submit" >Search</button>
+          <?php
+          include 'connect.php';
+          $ser=mysqli_real_escape_string($conn,$_POST['ser']);
+          $sqql="SELECT * FROM Item, Photo WHERE Item.ItemID=Photo.ItemID AND Title='$ser' GROUP BY Title ;";
+          $result=mysqli_query($conn,$sqql);
+          if(mysqli_num_rows($result)==1){
+          
+
+        }
+          ?>
+          
         </form>
 
         <div class="text-end">
