@@ -19,17 +19,23 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form action="lgp.php" method="post">
+  <form action="lgp.php" method="post" class="needs-validation" novalidate>
   
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="text" class="form-control" name="username" >
       <label for="floatingInput">Email address</label>
+      <input type="text" class="form-control" name="username" placeholder="" value="" required >
+      <div class="invalid-feedback">
+        Username Cannot Be Empty.
+    </div>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" name="password" placeholder="Password">
       <label for="floatingPassword">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password" value="" required  >
+      <div class="invalid-feedback">
+        Password Cannot Be Empty.
+    </div>
     </div>
 
     <div class="checkbox mb-3">
@@ -43,6 +49,6 @@
 </main>
 
 
-    
+<script src="form-validation.js"></script>
   </body>
 </html>
