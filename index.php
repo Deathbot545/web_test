@@ -76,14 +76,9 @@
       </div>
     </div>
   </header>
-
-
-
 </head>
 
 <body>
-
-
   <div>
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -95,8 +90,10 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="bd-placeholder-img" width="100%" height="100%" src="5-Auction-Tips-for-Beginners2.png"  >
+            
             <rect width="100%" height="100%" fill="#777" />
+            
           </svg>
 
           <div class="container">
@@ -150,11 +147,19 @@
     <nav>
       <div>
         <ul>
-          <a href="#" class="list-group-item list-group-item-action active">Cras justo odio</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+          <h3>Catogory</h3>
+          <a href="#" class="list-group-item list-group-item-action">Automotive</a>
+          <a href="#" class="list-group-item list-group-item-action">Appliencence</a>
+          <a href="#" class="list-group-item list-group-item-action">Books</a>
+          <a href="#" class="list-group-item list-group-item-action disabled">Bulding Supply</a>
+          <a href="#" class="list-group-item list-group-item-action">Computers</a>
+          <a href="#" class="list-group-item list-group-item-action">Collectebles</a>
+          <a href="#" class="list-group-item list-group-item-action">Elctronics</a>
+          <a href="#" class="list-group-item list-group-item-action">Books</a>
+          <a href="#" class="list-group-item list-group-item-action">Farm And Equpment</a>
+          <a href="#" class="list-group-item list-group-item-action">Furniture</a>
+          <a href="#" class="list-group-item list-group-item-action">Genaral Equpment</a>
+          <a href="#" class="list-group-item list-group-item-action">Heavey Equipment</a>
         </ul>
       </div>
     </nav>
@@ -174,6 +179,7 @@
                 <h2><?php echo htmlspecialchars($aanother['Title']) ?></h2>
                 <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($aanother['Photo']); ?>" />
                 <p class="card-text"><?php echo htmlspecialchars($aanother['Description']) ?></p>
+                <p class="card-text">Rs.<?php echo htmlspecialchars($aanother['StartBidAmount']) ?></p>
                 <a href="#" class="btn btn-primary">View</a>
               </div>
             </div>

@@ -37,7 +37,7 @@ CREATE TABLE Item
 Title VARCHAR(30),
 Description VARCHAR(100),
 Categorry VARCHAR(11),
-StartBidAmount DECIMAL(5,2),
+StartBidAmount INT,
 AuctionStart DATETIME,
 AuctionEnd DATETIME,
 SellerID INT(10) NOT NULL,

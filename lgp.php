@@ -6,10 +6,10 @@ if(isset($_POST['username'])){
  $username=$_POST['username'];
  $password=$_POST['password'];
 
- $sql="SELECT* FROM user WHERE user_name='".$username."' and cvv='".$password."'";
- $result=mysqli_query($con,$sql);
+ $sql="SELECT* FROM buyer WHERE Username='".$username."' and Password='".$password."'";
+ $result=mysqli_query($conn,$sql);
  if(mysqli_num_rows($result)==1){
-    echo'you have loged in';
+    include 'dash.php';
 
  }
  else{
